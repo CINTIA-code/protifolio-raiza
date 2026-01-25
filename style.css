@@ -1,96 +1,103 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Inter', sans-serif;
-  background: #f8f6f4;
-  color:C9A24D
-  line-height: 1.6;
-}
-
-.hero {
-  background: #efe9e4;
-  padding: 60px 20px;
-  text-align: center;
-}
-.imagem-de-perfil{
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-  border: 4px solid #C9A24D;
-  object-fit:cover;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.4rem;
-}
-
-.subtitle {
-  margin-top: 5px;
-  font-weight: 500;
-}
-
-.approach {
-  font-size: 0.95rem;
-  color: #6b6b6b;
+  margin: 0;
+  font-family: "Georgia", serif;
+  background-color: #F6F2EC;
+  color: #2B2B2B;
 }
 
 .container {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
-section {
-  margin-bottom: 40px;
+/* TOPO */
+.hero {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
+.hero img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #C9B37E;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 5px;
+}
+
+.hero p {
+  margin: 6px 0;
+  color: #6E6E6E;
+}
+
+/* TÍTULOS */
 h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  margin-bottom: 15px;
+  font-size: 26px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
 }
 
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #C9B37E;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* TEXTO */
+p {
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+  color: #444;
+}
+
+/* LISTAS SEM BOLINHAS */
 ul {
-  padding-left: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-  margin-bottom: 8px;
-}
-
-.contact {
+  font-size: 18px;
+  line-height: 1.8;
   text-align: center;
-  background: #efe9e4;
-  padding: 30px;
-  border-radius: 12px;
+  margin-bottom: 6px;
 }
 
-.button {
-  display: inline-block;
-  margin-top: 20px;
-  background: #2f4f4f;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 30px;
+/* CONTATO */
+.contato {
+  margin-top: 70px;
+  padding: 35px 25px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.contato a {
+  color: #B49A5A;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
 }
 
-.button:hover {
-  background: #1f3a3a;
+.contato a:hover {
+  text-decoration: underline;
 }
 
-.footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.85rem;
-  color: #777;
+.contato p {
+  margin: 12px 0;
+  color: #2B2B2B;
 }
