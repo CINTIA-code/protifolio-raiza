@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Georgia", serif;
+  font-family: Georgia, "Times New Roman", serif;
   background-color: #F6F2EC;
   color: #2B2B2B;
 }
@@ -18,28 +18,28 @@ body {
 }
 
 .hero img {
-  width: 170px;
-  height: 170px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #C9B37E;
-  margin-bottom: 20px;
+  border: 3px solid #C9B37E;
+  margin-bottom: 18px;
 }
 
 .hero h1 {
-  font-size: 38px;
-  margin-bottom: 5px;
+  font-size: 36px;
+  margin-bottom: 8px;
 }
 
-.hero p {
-  margin: 6px 0;
+.subtitulo {
   color: #6E6E6E;
+  margin: 4px 0;
 }
 
 /* TÍTULOS */
 h2 {
-  font-size: 26px;
-  margin-top: 60px;
+  font-size: 24px;
+  margin-top: 55px;
   margin-bottom: 20px;
   text-align: center;
   position: relative;
@@ -48,10 +48,10 @@ h2 {
 h2::after {
   content: "";
   display: block;
-  width: 60px;
+  width: 55px;
   height: 3px;
   background-color: #C9B37E;
-  margin: 12px auto 0;
+  margin: 10px auto 0;
   border-radius: 2px;
 }
 
@@ -63,7 +63,7 @@ p {
   color: #444;
 }
 
-/* LISTAS SEM BOLINHAS */
+/* LISTAS */
 ul {
   list-style: none;
   padding: 0;
@@ -82,8 +82,8 @@ li {
   margin-top: 70px;
   padding: 35px 25px;
   background-color: #FFFFFF;
-  border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   text-align: center;
 }
 
@@ -95,9 +95,4 @@ li {
 
 .contato a:hover {
   text-decoration: underline;
-}
-
-.contato p {
-  margin: 12px 0;
-  color: #2B2B2B;
 }
