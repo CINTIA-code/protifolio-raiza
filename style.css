@@ -1,4 +1,4 @@
-/* RESET BÁSICO */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -76,7 +76,7 @@ section {
   margin-bottom: 32px;
 }
 
-/* LISTA */
+/* LISTAS */
 ul {
   margin-top: 12px;
   padding-left: 20px;
@@ -91,6 +91,7 @@ li {
   text-align: center;
 }
 
+/* BOTÃO WHATSAPP */
 .btn-whatsapp {
   display: block;
   margin: 10px auto;
@@ -107,6 +108,7 @@ li {
   background-color: #2e7d32;
 }
 
+/* EMAIL */
 .email {
   margin-top: 14px;
 }
@@ -116,8 +118,20 @@ li {
   text-decoration: none;
 }
 
+/* ONLINE */
 .online {
   margin-top: 16px;
   font-weight: bold;
 }
 
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .card {
+    padding: 32px 20px;
+  }
+
+  .foto-perfil img {
+    width: 180px;
+    height: 180px;
+  }
+}
