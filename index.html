@@ -7,120 +7,106 @@
 
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f4efe8;
-      color: #2e2e2e;
+      font-family: "Georgia", serif;
+      background-color: #f6f2ec;
+      color: #1f1f1f;
       display: flex;
       justify-content: center;
       padding: 40px 16px;
     }
 
     .card {
-      background-color: #fbf9f5;
-      max-width: 720px;
+      background-color: #fbfaf8;
+      max-width: 760px;
       width: 100%;
-      padding: 48px 32px;
-      border-radius: 20px;
+      padding: 56px 40px;
+      border-radius: 18px;
       text-align: center;
+      border: 1px solid #d6c4a1;
     }
 
     .foto-perfil img {
-      width: 220px;
-      height: 220px;
+      width: 200px;
+      height: 200px;
       object-fit: cover;
       border-radius: 50%;
       margin-bottom: 24px;
+      border: 3px solid #c9a44c;
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 34px;
+      letter-spacing: 1px;
       margin-bottom: 6px;
     }
 
-    h2 {
-      font-size: 20px;
-      margin-bottom: 12px;
-      border-bottom: 2px solid #c9b9a6;
-      display: inline-block;
-      padding-bottom: 4px;
-    }
-
     .crp {
-      font-size: 15px;
-      color: #666;
-      margin-bottom: 16px;
-    }
-
-    p {
-      line-height: 1.6;
-      margin-top: 12px;
+      font-size: 16px;
+      margin-bottom: 12px;
     }
 
     .tag {
-      display: inline-block;
-      padding: 6px 16px;
-      border: 1px solid #c9b9a6;
-      border-radius: 20px;
-      font-size: 14px;
-      margin: 16px auto 40px;
+      font-size: 15px;
+      color: #6e5a2e;
+      margin-bottom: 36px;
     }
 
     section {
-      text-align: left;
-      margin-bottom: 32px;
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 16px;
+      color: #6e5a2e;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 12px;
     }
 
     ul {
+      list-style: none;
+      padding: 0;
       margin-top: 12px;
-      padding-left: 20px;
     }
 
     li {
       margin-bottom: 6px;
     }
 
-    .contato {
-      text-align: center;
+    .divider {
+      width: 120px;
+      height: 1px;
+      background-color: #c9a44c;
+      margin: 32px auto;
     }
 
-    .btn-whatsapp {
-      display: block;
-      margin: 10px auto;
-      padding: 12px;
-      max-width: 320px;
-      background-color: #1b5e20;
-      color: #ffffff;
+    .contato p {
+      margin-bottom: 8px;
+    }
+
+    .contato a {
+      color: #1f1f1f;
       text-decoration: none;
-      border-radius: 8px;
       font-weight: bold;
     }
 
-    .btn-whatsapp:hover {
-      background-color: #2e7d32;
-    }
-
-    .email {
-      margin-top: 14px;
-    }
-
-    .email a {
-      color: #2e2e2e;
-      text-decoration: none;
-    }
-
-    .online {
-      margin-top: 16px;
-      font-weight: bold;
+    .contato a:hover {
+      color: #6e5a2e;
     }
 
     @media (max-width: 600px) {
       .card {
-        padding: 32px 20px;
+        padding: 40px 24px;
       }
 
-      .foto-perfil img {
-        width: 180px;
-        height: 180px;
+      h1 {
+        font-size: 28px;
       }
     }
   </style>
@@ -134,49 +120,69 @@
       <img src="imagem/foto-raiza.jpg" alt="Raiza Silva">
     </div>
 
-    <h1>Raiza Silva</h1>
-    <p class="crp">Psicóloga Clínica • CRP 04/82055</p>
+    <h1>RAIZA SILVA</h1>
+    <p class="crp">Psicóloga Clínica<br>CRP 04/82055</p>
 
-    <div class="tag">
-      Terapia Cognitivo-Comportamental
-    </div>
+    <div class="tag">Terapia Cognitivo-Comportamental</div>
+
+    <div class="divider"></div>
 
     <section>
-      <h2>Sobre o atendimento</h2>
       <p>
         Atendimento acolhedor e ético para pessoas que buscam apoio psicológico
-        diante de questões relacionadas à ansiedade, estresse e desenvolvimento emocional.
+        diante de questões relacionadas à ansiedade, estresse e vivências depressivas.
+      </p>
+
+      <p>
+        Autoconhecimento e desenvolvimento emocional<br>
+        Questões relacionais e interpessoais<br>
+        Demandas acadêmicas e profissionais<br>
+        Saúde mental no contexto de trabalho<br>
+        Regulação emocional
       </p>
     </section>
 
+    <div class="divider"></div>
+
     <section>
-      <h2>Como posso ajudar</h2>
+      <h2>Serviços Psicológicos</h2>
       <ul>
-        <li>Ansiedade e estresse</li>
-        <li>Vivências depressivas</li>
-        <li>Questões emocionais e relacionais</li>
-        <li>Autoconhecimento</li>
-        <li>Demandas acadêmicas e profissionais</li>
-        <li>Regulação emocional</li>
+        <li>Psicoterapia individual para adultos</li>
+        <li>Atendimento psicológico online</li>
+        <li>Avaliação psicológica conforme demanda</li>
+        <li>Acompanhamento psicológico</li>
+        <li>Orientação psicológica breve</li>
       </ul>
     </section>
 
+    <div class="divider"></div>
+
+    <section>
+      <h2>Documentos Psicológicos</h2>
+      <p>
+        Avaliação psicológica para cirurgia bariátrica<br>
+        Elaboração de relatórios e laudos psicológicos<br>
+        Emissão de parecer psicológico
+      </p>
+    </section>
+
+    <div class="divider"></div>
+
     <section class="contato">
-      <h2>Contato profissional</h2>
+      <h2>Contato Profissional</h2>
 
-      <a class="btn-whatsapp" href="https://wa.me/5531971043616" target="_blank">
-        WhatsApp • (31) 97104-3616
-      </a>
+      <p>Telefone / WhatsApp profissional</p>
+      <p>
+        <a href="https://wa.me/5531971043616" target="_blank">(31) 97104-3616</a><br>
+        <a href="https://wa.me/5531971151614" target="_blank">(31) 97115-1614</a>
+      </p>
 
-      <a class="btn-whatsapp" href="https://wa.me/5531971151614" target="_blank">
-        WhatsApp • (31) 97115-1614
-      </a>
-
-      <p class="email">
+      <p>E-mail profissional</p>
+      <p>
         <a href="mailto:ray23santo@hotmail.com">ray23santo@hotmail.com</a>
       </p>
 
-      <p class="online">Atendimentos online</p>
+      <p><strong>Sessões online</strong></p>
     </section>
 
   </main>
