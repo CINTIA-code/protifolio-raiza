@@ -4,200 +4,262 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Raiza Silva | Psicóloga Clínica</title>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
-  body {
-    margin: 0;
-    padding: 0;
-    background: #f5f1ea;
-    font-family: "Georgia", serif;
-    color: #1a1a1a;
-    display: flex;
-    justify-content: center;
-  }
-
-  .card {
-    max-width: 760px;
-    background: #fbfaf8;
-    margin: 40px 16px;
-    padding: 50px 40px;
-    border-radius: 18px;
-    border: 1px solid #d4c19a;
-    text-align: center;
-  }
-
-  .foto img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #c8a44b;
-    margin-bottom: 24px;
-  }
-
-  h1 {
-    font-size: 34px;
-    margin-bottom: 6px;
-    letter-spacing: 1px;
-  }
-
-  .crp {
-    font-size: 16px;
-    margin-bottom: 6px;
-  }
-
-  .abordagem {
-    font-size: 15px;
-    color: #6f5b2c;
-    margin-bottom: 26px;
-  }
-
-  .divider {
-    width: 120px;
-    height: 1px;
-    background: #c8a44b;
-    margin: 30px auto;
-  }
-
-  h2 {
-    font-size: 22px;
-    color: #6f5b2c;
-    margin-bottom: 14px;
-  }
-
-  p {
-    font-size: 16px;
-    line-height: 1.7;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  li {
-    margin-bottom: 6px;
-  }
-
-  .online {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 28px 0 10px;
-  }
-
-  .contato a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    text-decoration: none;
-    color: #1a1a1a;
-  }
-
-  .contato a:hover {
-    color: #6f5b2c;
-  }
-
-  .whatsapp-icon {
-    width: 20px;
-    height: 20px;
-    fill: #25d366;
-  }
-
-  @media (max-width: 600px) {
-    .card {
-      padding: 36px 22px;
-    }
-    h1 {
-      font-size: 28px;
-    }
-  }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+background:#f5f1ea;
+font-family:"Georgia",serif;
+color:#1a1a1a;
+display:flex;
+justify-content:center;
+padding:20px;
+line-height:1.7;
+}
+.card{
+max-width:780px;
+width:100%;
+background:#fbfaf8;
+padding:50px 35px;
+border-radius:22px;
+border:1px solid #d4c19a;
+box-shadow:0 8px 30px rgba(0,0,0,.05);
+}
+.foto{
+text-align:center;
+}
+.foto img{
+width:190px;
+height:190px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #c8a44b;
+margin-bottom:25px;
+}
+h1{
+font-size:36px;
+text-align:center;
+margin-bottom:8px;
+}
+.crp{
+text-align:center;
+margin-bottom:6px;
+}
+.abordagem{
+text-align:center;
+color:#6f5b2c;
+margin-bottom:25px;
+}
+.divider{
+width:120px;
+height:1px;
+background:#c8a44b;
+margin:28px auto;
+}
+h2{
+color:#6f5b2c;
+margin-bottom:15px;
+font-size:24px;
+}
+.intro{
+text-align:center;
+}
+/* ACORDEON */
+.acordeon{
+border:1px solid #d4c19a;
+border-radius:14px;
+overflow:hidden;
+margin-bottom:18px;
+background:white;
+}
+.acordeon-btn{
+width:100%;
+padding:20px;
+border:none;
+background:none;
+cursor:pointer;
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-size:18px;
+font-family:Georgia, serif;
+font-weight:bold;
+color:#6f5b2c;
+}
+.acordeon-btn:hover{
+background:#f4eee4;
+}
+.acordeon-content{
+display:none;
+padding:0 25px 22px;
+text-align:left;
+}
+.acordeon.active .acordeon-content{
+display:block;
+}
+.acordeon.active span{
+transform:rotate(180deg);
+}
+.acordeon-btn span{
+transition:.3s;
+}
+ul{
+padding-left:18px;
+}
+.online{
+font-size:20px;
+font-weight:bold;
+text-align:center;
+margin:30px 0 20px;
+}
+/* CONTATOS */
+.contato{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+.contato a{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+padding:14px;
+text-decoration:none;
+color:#1a1a1a;
+background:white;
+border-radius:12px;
+border:1px solid #d4c19a;
+transition:.3s;
+}
+.contato a:hover{
+transform:translateY(-2px);
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+.whatsapp-btn{
+color:#25D366;
+font-weight:bold;
+}
+footer{
+margin-top:35px;
+text-align:center;
+font-size:14px;
+color:#6f5b2c;
+}
+@media(max-width:600px){
+.card{
+padding:35px 22px;
+}
+h1{
+font-size:29px;
+}
+.foto img{
+width:160px;
+height:160px;
+}
+}
 </style>
 </head>
-
 <body>
-
 <main class="card">
-
-  <div class="foto">
-    <img src="foto-raiza.jpg" alt="Raiza Silva">
-  </div>
-
-  <h1>Raiza Silva</h1>
-  <p class="crp">Psicóloga Clínica • CRP 04/82055</p>
-  <p class="abordagem">Terapia Cognitivo-Comportamental</p>
-
-  <div class="divider"></div>
-
-  <h2>Sobre o atendimento</h2>
-  <p>
-    Atendimento acolhedor e ético para pessoas que buscam apoio psicológico
-    diante de questões relacionadas à ansiedade, estresse, vivências depressivas
-    e desenvolvimento emocional.
-  </p>
-
-  <div class="divider"></div>
-
-  <h2>Como posso ajudar</h2>
-  <ul>
-    <li>Ansiedade e estresse</li>
-    <li>Vivências depressivas</li>
-    <li>Questões emocionais e relacionais</li>
-    <li>Autoconhecimento</li>
-    <li>Demandas acadêmicas e profissionais</li>
-    <li>Regulação emocional</li>
-  </ul>
-
-  <div class="divider"></div>
-
-  <h2>Serviços psicológicos</h2>
-  <ul>
-    <li>Psicoterapia individual para adultos</li>
-    <li>Atendimento psicológico online</li>
-    <li>Avaliação psicológica conforme demanda</li>
-    <li>Acompanhamento psicológico</li>
-    <li>Orientação psicológica breve</li>
-  </ul>
-
-  <div class="divider"></div>
-
-  <h2>Documentos psicológicos</h2>
-  <ul>
-    <li>Avaliação psicológica para cirurgia bariátrica</li>
-    <li>Relatórios e laudos psicológicos</li>
-    <li>Parecer psicológico</li>
-  </ul>
-
-  <div class="divider"></div>
-
-  <p class="online">Sessões Online</p>
-
-  <section class="contato">
-    <h2>Contato profissional</h2>
-
-    <a href="https://wa.me/5531971043616" target="_blank">
-      <svg class="whatsapp-icon" viewBox="0 0 32 32">
-        <path d="M19.11 17.42c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.33-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47-.16-.01-.34-.01-.52-.01s-.48.07-.73.34c-.25.27-.95.93-.95 2.27s.98 2.64 1.11 2.82c.14.18 1.93 2.95 4.69 4.13.66.28 1.17.45 1.57.57.66.21 1.26.18 1.73.11.53-.08 1.6-.65 1.83-1.27.23-.62.23-1.15.16-1.27-.07-.11-.25-.18-.52-.32z"/>
-      </svg>
-      (31) 97104-3616
-    </a>
-
-    <a href="https://wa.me/5531971151614" target="_blank">
-      <svg class="whatsapp-icon" viewBox="0 0 32 32">
-        <path d="M19.11 17.42c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.33-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47-.16-.01-.34-.01-.52-.01s-.48.07-.73.34c-.25.27-.95.93-.95 2.27s.98 2.64 1.11 2.82c.14.18 1.93 2.95 4.69 4.13.66.28 1.17.45 1.57.57.66.21 1.26.18 1.73.11.53-.08 1.6-.65 1.83-1.27.23-.62.23-1.15.16-1.27-.07-.11-.25-.18-.52-.32z"/>
-      </svg>
-      (31) 97115-1614
-    </a>
-
-    <a href="mailto:ray23santo@hotmail.com">
-      ✉️ ray23santo@hotmail.com
-    </a>
-  </section>
-
+<div class="foto">
+<img src="foto-raiza.jpg" alt="Raiza Silva">
+</div>
+<h1>Raiza Silva</h1>
+<p class="crp">
+Psicóloga Clínica • CRP 04/82055
+</p>
+<p class="abordagem">
+Terapia Cognitivo-Comportamental
+</p>
+<div class="divider"></div>
+<section class="intro">
+<h2>Sobre o atendimento</h2>
+<p>
+Atendimento acolhedor e ético para pessoas que buscam apoio psicológico diante de questões relacionadas à ansiedade, estresse, vivências depressivas e desenvolvimento emocional.
+</p>
+</section>
+<div class="divider"></div>
+<div class="acordeon">
+<button class="acordeon-btn">
+Como posso ajudar
+<span>⌄</span>
+</button>
+<div class="acordeon-content">
+<ul>
+<li>Ansiedade e estresse</li>
+<li>Vivências depressivas</li>
+<li>Questões emocionais e relacionais</li>
+<li>Autoconhecimento</li>
+<li>Demandas acadêmicas e profissionais</li>
+<li>Regulação emocional</li>
+</ul>
+</div>
+</div>
+<div class="acordeon">
+<button class="acordeon-btn">
+Serviços psicológicos
+<span>⌄</span>
+</button>
+<div class="acordeon-content">
+<ul>
+<li>Psicoterapia individual para adultos</li>
+<li>Atendimento psicológico online</li>
+<li>Avaliação psicológica conforme demanda</li>
+<li>Acompanhamento psicológico</li>
+<li>Orientação psicológica breve</li>
+</ul>
+</div>
+</div>
+<div class="acordeon">
+<button class="acordeon-btn">
+Documentos psicológicos
+<span>⌄</span>
+</button>
+<div class="acordeon-content">
+<ul>
+<li>Avaliação psicológica para cirurgia bariátrica</li>
+<li>Relatórios psicológicos</li>
+<li>Laudos psicológicos</li>
+<li>Parecer psicológico</li>
+</ul>
+</div>
+</div>
+<p class="online">
+Sessões Online
+</p>
+<section class="contato">
+<h2 style="text-align:center">
+Contato profissional
+</h2>
+<a href="https://wa.me/5531971043616" target="_blank" class="whatsapp-btn">
+<i class="fa-brands fa-whatsapp"></i>
+(31) 97104-3616
+</a>
+<a href="https://wa.me/5531971151614" target="_blank" class="whatsapp-btn">
+<i class="fa-brands fa-whatsapp"></i>
+(31) 97115-1614
+</a>
+<a href="mailto:ray23santo@hotmail.com">
+<i class="fa-solid fa-envelope"></i>
+ray23santo@hotmail.com
+</a>
+</section>
+<footer>
+Psicologia baseada em ética, acolhimento e cuidado.
+</footer>
 </main>
-
+<script>
+const acordeons =
+document.querySelectorAll(".acordeon-btn");
+acordeons.forEach(botao=>{
+botao.addEventListener("click",()=>{
+botao.parentElement.classList.toggle("active");
+});
+});
+</script>
 </body>
 </html>
